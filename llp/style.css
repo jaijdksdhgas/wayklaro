@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right bottom, #423f3f, #000000);
+    color: #ecf0f1;
+    line-height: 1.6;
+    min-height: 100%;
+}
+
+.main-header {
+    background: #2c3e50;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+.main-nav {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.nav-title {
+    font-family: 'Oswald', sans-serif;
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.track-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.track-link {
+    display: block;
+    padding: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.track-link:hover {
+    background: #e74c3c;
+    transform: translateX(10px);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: grid;
+    gap: 48px;
+}
+
+.song-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+}
+
+.album-art {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.song-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #e74c3c, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-footer {
+    background: #151618;
+    text-align: center;
+    padding: 24px;
+    margin-top: 64px;
+}           
